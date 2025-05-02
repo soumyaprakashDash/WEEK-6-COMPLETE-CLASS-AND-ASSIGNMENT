@@ -1,0 +1,43 @@
+## React hook assignments
+You will find a bunch of folders this week, each with some set of assignments for a specific hook
+Go to the folder (for example 1-use-memo) and comment out the Assignment component you are working on (Assignment1/Assignment2...) and try to solve it
+There are no tests, but solution videos will be provided
+
+ASSIGNMENT OF :
+ 
+ 1=USE-MEMO :
+ 2-USE-CALLBACK :
+ 3-USE-REF :
+
+(1)  :                   **********USE-MEMO*********** :
+ a- In this assignment, your task is to create a component that performs an expensive calculation (finding the factorial) 
+ based on a user input. 
+ b-Use useMemo to ensure that the calculation is only recomputed when the input changes, not on every render.
+ (2):
+c-In this assignment, you will create a component that renders a large list of sentences and includes an input field
+ for filtering these items.  The goal is to use useMemo to optimize the filtering process, 
+ ensuring the list is only re-calculated when necessary (e.g., when the filter criteria changes).
+d- You will learn something new here, specifically how you have to pass more than one value in the dependency array
+ (3)
+ e- You have been given a list of items you shopped from the grocery store
+f-You need to calculate the total amount of money you spent
+
+                    *****************USE-CALLBACKS********** 
+(1) :
+A-Create a counter component with increment and decrement functions.
+B- Pass these functions to a child component which has buttons to perform the increment and decrement actions.
+C- Use useCallback to ensure that these functions are not recreated on every render.
+
+(2)
+
+A- Create a component with a text input field and a button. The goal is to display an alert with the text entered 
+when the button is clicked. Use useCallback to memoize the event handler function that triggers the alert, 
+ensuring it's not recreated on every render.
+B- Currently we only have inputText as a state variable and hence you might not see the benefits of 
+C- useCallback. We're also not passing it down to another component as a prop 
+which is another reason for you to not see it's benefits immedietely.
+  
+                          ****************USE-REF***********
+ (3)
+ A-Create a component with a text input field and a button. When the component mounts or the button is clicked, automatically focus the text input field using useRef.
+B-Create a component that tracks and displays the number of times it has been rendered.
